@@ -1,9 +1,9 @@
 """
 stringjumble.py
-Author: <your name>
-Credit: <sources>
-
-Assignment:
+Author: Peter Bynum
+Credit:
+ turning stings into lists: http://stackoverflow.com/questions/8266529/python-convert-string-to-list
+Assignment: String Jumble
 
 The purpose of this challenge is to gain proficiency with 
 manipulating lists.
@@ -25,3 +25,10 @@ ydnah dnif yam uoy taht skcirt ro seuqinhcet wef a era erehT
 handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
+
+string = input("Please enter a string of text (the bigger the better): ")
+print('You entered "{0}". Now jumble it: '.format(string))
+list = string.split()
+
+for i in range(0,len(list)):
+    
