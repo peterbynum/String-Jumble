@@ -2,7 +2,9 @@
 stringjumble.py
 Author: Peter Bynum
 Credit:
- turning stings into lists: http://stackoverflow.com/questions/8266529/python-convert-string-to-list
+turning strings into lists: http://stackoverflow.com/questions/8266529/python-convert-string-to-list
+turning lists into strings: https://www.decalage.info/en/python/print_list
+[::-1] gives reverse order of a string/list: https://docs.python.org/2/whatsnew/2.3.html#extended-slices
 Assignment: String Jumble
 
 The purpose of this challenge is to gain proficiency with 
@@ -30,4 +32,13 @@ string = input("Please enter a string of text (the bigger the better): ")
 print('You entered "{0}". Now jumble it: '.format(string))
 list = string.split()
 
-for i in range(0,len(list))
+line1 = string
+print(line1[::-1])
+
+line2 = list[::-1]
+print(' '.join(line2))
+
+line3 = ''
+for i in range(0,len(list)):
+    line3.append(list[i][::-1])
+print(line3)
