@@ -30,5 +30,4 @@ string = input("Please enter a string of text (the bigger the better): ")
 print('You entered "{0}". Now jumble it: '.format(string))
 list = string.split()
 
-for i in range(0,len(list)):
-    
+for i in range(0,len(list))
