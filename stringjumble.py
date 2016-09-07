@@ -31,14 +31,13 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 string = input("Please enter a string of text (the bigger the better): ")
 print('You entered "{0}". Now jumble it: '.format(string))
 list = string.split()
-
+print()
 line1 = string
 print(line1[::-1])
-
+print()
 line2 = list[::-1]
 print(' '.join(line2))
-
-line3 = ''
-for i in range(0,len(list)):
-    line3.append(list[i][::-1])
+print()
+line3 = []
+[line3.append(list[i][::-1]) for i in (0,(len(list)-1))]
 print(line3)
