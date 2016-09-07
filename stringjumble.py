@@ -30,19 +30,19 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 
 string = input("Please enter a string of text (the bigger the better): ")
 print('You entered "{0}". Now jumble it: '.format(string))
-list = string.split()
+list = string.split() #divides all elements of a string into separate elements in a list
 
 
 line1 = string
-print(line1[::-1])
+print(line1[::-1]) #using slicing to rearrange "line1". leaving the start and end indexes blank signals to use the entire string, while the -1 is the command to flip it
 
 
 line2 = list[::-1]
-print(' '.join(line2))
+print(' '.join(line2)) #joins all the elements in "line2" with only a space in between
 
 
 line3 = []
-[line3.append(list[i][::-1]) for i in range(0,len(list))]
+[line3.append(list[i][::-1]) for i in range(0,len(list))] #treats each element of the original list individually, flipping them one by one. However, it still add the elements themselves into the new line in the correct order.
 print(' '.join(line3))
 
 
